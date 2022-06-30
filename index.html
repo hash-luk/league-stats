@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>League Stats</title>
-    <link rel="stylesheet" href="./Styles/globalstyles.css" />
+    <title>Riot Login Screen</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,9 +16,11 @@
   <body>
     <main>
       <section class="l-information">
-        <div class="l-information__logo"></div>
+        <div class="l-information__logo">
+          <img src="./assets/riot-logo.png" alt="Riot games logo" />
+        </div>
         <div class="l-information__data">
-          <h3>Consultar Stats</h3>
+          <h3>Fazer login</h3>
           <div class="l-information__data__inputs">
             <div class="l-information__data__inputs__username">
               <label for="username">NOME DE USUÁRIO</label>
@@ -30,24 +32,34 @@
             </div>
           </div>
           <div class="l-information__data__buttons">
-            <button class="l-information__data__buttons__facebook"></button>
-            <button class="l-information__data__buttons__google"></button>
-            <button class="l-information__data__buttons__apple"></button>
+            <div class="l-information__data__buttons__social">
+              <button class="l-information__data__buttons__facebook">
+                <img src="./assets/facebook-logo.svg" alt="Logo do facebook" />
+              </button>
+              <button class="l-information__data__buttons__google">
+                <img src="./assets/google-logo.svg" alt="Logo do Google" />
+              </button>
+              <button class="l-information__data__buttons__apple">
+                <img src="./assets/apple-logo.svg" alt="Logo da apple" />
+              </button>
+            </div>
             <div class="l-information__data__buttons__keeplogin">
-              <label for="keeplogin">Manter login</label>
               <input type="radio" name="keeplogin" />
+              <label for="keeplogin">Manter login</label>
             </div>
           </div>
           <div class="l-information__data__otherinfo">
             <a href="#">NÃO CONSEGUE INICIAR SESSÃO?</a>
             <a href="#">CRIAR CONTA</a>
-            <a href="#">V52.0.1</a>
+            <a href="#" class="version">V52.0.1</a>
           </div>
         </div>
       </section>
       <section class="r-information">
         <div class="r-information__controls"></div>
-        <div class="r-information__image"></div>
+        <div class="r-information__image">
+          <img src="./assets/irelia-bg.jpg" alt="Irelia projeto background" />
+        </div>
       </section>
     </main>
   </body>
