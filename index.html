@@ -27,8 +27,10 @@
               <label for="username" id="userLabel">NOME DE USUÁRIO</label>
             </div>
             <div class="l-information__data__inputs__password">
-              <input type="password" name="password" id="passwordInput" onblur="checkInputs()"/>
+              <img src="./assets/eye-icon.png" alt="Tornar senha visível" class="eye-icon" id="eye-icon">
+              <input type="password" name="password" id="passwordInput" onblur="checkInputs()" onfocus="iconShowPassword()"/>
               <label for="password" id="passwordLabel">SENHA</label>
+
             </div>
           </div>
           <div class="l-information__data__buttons">
