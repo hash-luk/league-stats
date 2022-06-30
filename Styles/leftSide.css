@@ -122,6 +122,17 @@
 
 .l-information__data__buttons__keeplogin input {
     margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    appearance: none;
+    cursor: pointer;
+    background-color: #e7e7e7;
+    background-image: none;
+}
+
+.l-information__data__buttons__keeplogin input:checked{
+    background-color: red;
 }
 
 .l-information__data__buttons__keeplogin label {
